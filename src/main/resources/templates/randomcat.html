@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cat</title>
+</head>
+<body>
+    <form action="/api/addcat" method="post">
+        <img data-th-src="${catimg}">
+        <input type="hidden" name="catid" data-th-value="${catid}">
+        <input type="text" name="user" id="user">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
